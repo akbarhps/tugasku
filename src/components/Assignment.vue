@@ -6,18 +6,12 @@
         <h5 class="content__course">{{ courseName }}</h5>
         <p class="content__name">{{ assignmentName }}</p>
       </div>
-      <div class="arrow-icon">
-        <MenuLeft decorative/>
-      </div>
     </a>
   </div>
 </template>
 
 <script>
-import MenuLeft from "vue-material-design-icons/MenuLeft.vue"
-
 export default {
-  components: {MenuLeft},
   props: ['assignment'],
   setup(props) {
     const assignment = props.assignment;
@@ -34,39 +28,23 @@ export default {
 
 <style scoped>
 .assignment {
-  border-radius: 0.5rem;
+  border-radius: 20px;
   background: white;
-  margin: 1rem auto;
+  margin: 20px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .assignment a {
-  display: flex;
   color: black;
   text-decoration: none;
 }
 
 .content {
-  flex: 11;
-  padding: 0.7rem;
-}
-
-.arrow-icon {
-  flex:1;
-}
-
-.content__date {
-  color: #adb5bd;
-  font-weight: 300;
+  padding: 40px;
 }
 
 .content__course {
-  margin-top: .5rem;
-  margin-bottom: 0.3rem;
-  font-size: 1.4rem;
-}
-
-.content__name {
-  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 </style>
