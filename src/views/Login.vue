@@ -34,7 +34,6 @@
         </div>
 
         <button>Login</button>
-       
       </form>
     </div>
     <Footer/>
@@ -45,13 +44,12 @@
 import {onMounted, ref} from 'vue';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Button from "@/components/Button";
 import ProgressBar from "@/components/ProgressBar";
 import loginHandler from "@/composables/loginHandler";
 import elearningHandler from "@/composables/elearningHandler";
 
 export default {
-  components: {ProgressBar, Navbar, Footer, Button},
+  components: {ProgressBar, Navbar, Footer},
   setup() {
     const username = ref('');
     const password = ref('');
